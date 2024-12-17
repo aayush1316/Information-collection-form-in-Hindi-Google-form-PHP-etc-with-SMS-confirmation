@@ -1,1 +1,22 @@
-## Hosting Google Form on Custom DomainTo host a Google Form on a custom domain using Google Workspace, follow these steps:1. **Set Up Your Domain**:   - Purchase and verify your domain in the Google Admin console.2. **Create Your Google Form**:   - Go to Google Forms and create your form.3. **Publish the Form**:   - Click on the "Send" button and copy the link.4. **Map Your Domain to the Form**:   - In the Google Admin console, go to **Apps > Google Workspace > Sites**.   - Click on **Custom URL** and then **Add > New sites**.   - Enter the URL of your Google Form and select your verified domain.5. **Update DNS Settings**:   - Add a CNAME record pointing to `ghs.googlehosted.com` for the subdomain you want to use.6. **Test Your Setup**:   - Visit the custom URL to ensure your Google Form is accessible.## LicenseThis project is licensed under the MIT License. See the LICENSE file for details.## Acknowledgements- Twilio for providing the API for sending OTPs via WhatsApp.- Google Workspace for hosting Google Forms.
+# Form Application with OTP Verification
+
+This project is a Node.js application that creates a form to collect user information in Hindi and verifies the user's WhatsApp number using OTP. Additionally, it includes instructions for hosting a Google Form on a custom domain using Google Workspace.
+
+## Features
+
+- Collects user information in Hindi
+- Sends OTP to the user's WhatsApp number for verification
+- Verifies the OTP before submitting the form data
+
+## Prerequisites
+
+- Node.js and npm installed
+- Twilio account for sending OTPs via WhatsApp
+- Google Workspace account for hosting Google Forms
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/form-otp-verification.git
+   cd form-otp-verification
