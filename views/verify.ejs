@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP सत्यापन</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>OTP सत्यापन</h1>
+    <form action="/verify" method="POST">
+        <input type="hidden" name="otp" value="<%= otp %>">
+        <input type="hidden" name="formData" value="<%= JSON.stringify(formData) %>">
+        <label for="enteredOtp">OTP दर्ज करें:</label>
+        <input type="text" id="enteredOtp" name="enteredOtp" required><br>
+        <button type="submit">सत्यापित करें</button>
+    </form>
+</body>
+</html>
