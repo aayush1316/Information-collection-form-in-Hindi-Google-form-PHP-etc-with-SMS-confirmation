@@ -20,3 +20,12 @@ This project is a Node.js application that creates a form to collect user inform
    ```bash
    git clone https://github.com/yourusername/form-otp-verification.git
    cd form-otp-verification
+2. Install the dependencies:
+   ```bash
+   npm install
+3. Set up environment variables in a `.env` file:
+
+   ```env
+   TWILIO_ACCOUNT_SID=your_account_sid
+   TWILIO_AUTH_TOKEN=your_auth_token
+   TWILIO_PHONE_NUMBER=your_twilio_phone_number   
